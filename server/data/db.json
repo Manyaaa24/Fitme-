@@ -1,0 +1,425 @@
+{
+  "users": {
+    "patient@example.com": {
+      "password": "123456",
+      "name": "Mani",
+      "role": "patient",
+      "email": "patient@example.com"
+    },
+    "manya.ladkani2023@vitstudent.ac.in": {
+      "password": "123456789",
+      "name": "Manya",
+      "role": "patient",
+      "email": "manya.ladkani2023@vitstudent.ac.in"
+    },
+    "johndoe@gmail.com": {
+      "password": "12345678",
+      "name": "JOHN",
+      "role": "patient",
+      "email": "johndoe@gmail.com"
+    },
+    "johndoe1@gmail.com": {
+      "password": "123456789",
+      "name": "John",
+      "role": "patient",
+      "email": "johndoe1@gmail.com"
+    },
+    "manyaladkani2@gmail.com": {
+      "password": "123456789",
+      "name": "Manya Ladkani ",
+      "role": "patient",
+      "email": "manyaladkani2@gmail.com"
+    },
+    "manyaladkani@gmail.com": {
+      "password": "123456",
+      "name": "Manya ",
+      "role": "patient",
+      "email": "manyaladkani@gmail.com"
+    }
+  },
+  "doctors": [
+    {
+      "id": 1,
+      "name": "Dr. Priya Sharma",
+      "specialty": "Cardiology",
+      "location": "Tambaram, Chennai",
+      "rating": 4.9,
+      "reviews": 342,
+      "image": "https://img.freepik.com/free-photo/woman-doctor-wearing-lab-coat-with-stethoscope-isolated_1303-29791.jpg?w=360",
+      "bio": "15+ years experience in interventional cardiology. Expert in heart failure management and preventive cardiology.",
+      "fee": 1200,
+      "gender": "female",
+      "availableSlots": {
+        "2026-04-15": [
+          "09:00",
+          "10:00",
+          "11:30",
+          "14:00"
+        ],
+        "2026-04-16": [
+          "09:30",
+          "11:00",
+          "15:00"
+        ],
+        "2026-04-17": [
+          "10:00",
+          "13:00",
+          "16:00"
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "name": "Dr. Arjun Menon",
+      "specialty": "Orthopedics",
+      "location": "Tambaram, Chennai",
+      "rating": 4.8,
+      "reviews": 218,
+      "image": "https://img.freepik.com/free-photo/smiling-doctor-with-strethoscope-isolated-grey_651396-974.jpg?w=360",
+      "bio": "Joint replacement & sports injury specialist. Former team doctor for Tamil Nadu cricket.",
+      "fee": 1500,
+      "gender": "male",
+      "availableSlots": {
+        "2026-04-15": [
+          "08:30",
+          "10:30",
+          "13:00"
+        ],
+        "2026-04-16": [
+          "09:00",
+          "14:30"
+        ],
+        "2026-04-17": [
+          "11:00",
+          "15:00"
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "name": "Dr. Meena Iyer",
+      "specialty": "Pediatrics",
+      "location": "Tambaram, Chennai",
+      "rating": 4.95,
+      "reviews": 189,
+      "image": "https://img.freepik.com/free-photo/medium-shot-smiley-doctor-with-coat_23-2148814212.jpg?w=360",
+      "bio": "Child health & vaccination expert. Gentle care for newborns to teens.",
+      "fee": 800,
+      "gender": "female",
+      "availableSlots": {
+        "2026-04-18": [
+          "09:00",
+          "10:30",
+          "12:00"
+        ],
+        "2026-04-19": [
+          "09:00",
+          "11:00",
+          "14:00"
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "name": "Dr. Rajesh Kumar",
+      "specialty": "Neurology",
+      "location": "Anna Nagar, Chennai",
+      "rating": 4.7,
+      "reviews": 275,
+      "image": "https://img.freepik.com/free-photo/doctor-with-his-arms-crossed-white-background_1368-5790.jpg?w=360",
+      "bio": "Expert in stroke management, epilepsy, and neurodegenerative disorders. 20+ years experience.",
+      "fee": 1800,
+      "gender": "male",
+      "availableSlots": {
+        "2026-04-15": [
+          "10:00",
+          "12:00",
+          "15:00"
+        ],
+        "2026-04-16": [
+          "09:00",
+          "11:30"
+        ]
+      }
+    },
+    {
+      "id": 5,
+      "name": "Dr. Ananya Patel",
+      "specialty": "Dermatology",
+      "location": "T. Nagar, Chennai",
+      "rating": 4.85,
+      "reviews": 156,
+      "image": "https://img.freepik.com/free-photo/beautiful-young-female-doctor-looking-camera-office_1301-7807.jpg?w=360",
+      "bio": "Skin specialist with expertise in cosmetic dermatology and laser treatments. Known for personalized care.",
+      "fee": 1000,
+      "gender": "female",
+      "availableSlots": {
+        "2026-04-15": [
+          "09:00",
+          "11:00"
+        ],
+        "2026-04-17": [
+          "10:00",
+          "14:00",
+          "16:00"
+        ]
+      }
+    },
+    {
+      "id": 6,
+      "name": "Dr. Suresh Reddy",
+      "specialty": "General Medicine",
+      "location": "Velachery, Chennai",
+      "rating": 4.6,
+      "reviews": 412,
+      "image": "https://img.freepik.com/free-photo/young-handsome-physician-medical-robe-with-stethoscope_1303-17818.jpg?w=360",
+      "bio": "Family physician providing comprehensive primary care. Preventive health check-up specialist.",
+      "fee": 600,
+      "gender": "male",
+      "availableSlots": {
+        "2026-04-15": [
+          "08:00",
+          "09:00",
+          "10:00",
+          "11:00",
+          "14:00",
+          "15:00"
+        ],
+        "2026-04-16": [
+          "08:00",
+          "09:30",
+          "11:00",
+          "14:00"
+        ],
+        "2026-04-17": [
+          "09:00",
+          "10:30",
+          "14:00"
+        ]
+      }
+    }
+  ],
+  "healthData": {
+    "vitals": {
+      "bloodPressure": {
+        "value": "120/80",
+        "unit": "mmHg",
+        "status": "Normal"
+      },
+      "heartRate": {
+        "value": "72",
+        "unit": "bpm",
+        "status": "Normal"
+      },
+      "bloodSugar": {
+        "value": "95",
+        "unit": "mg/dL",
+        "status": "Normal"
+      },
+      "bmi": {
+        "value": "23.4",
+        "unit": "",
+        "status": "Healthy"
+      }
+    },
+    "prescriptions": [
+      {
+        "name": "Paracetamol 500mg",
+        "dosage": "2 times daily",
+        "validUntil": "Mar 15"
+      },
+      {
+        "name": "Vitamin D3",
+        "dosage": "1 time daily",
+        "validUntil": "Apr 20"
+      }
+    ],
+    "labResults": [
+      {
+        "test": "Complete Blood Count",
+        "doctor": "Dr. Priya Sharma",
+        "date": "Feb 10, 2026",
+        "status": "Ready"
+      },
+      {
+        "test": "Lipid Profile",
+        "doctor": "Dr. Arjun Reddy",
+        "date": "Feb 8, 2026",
+        "status": "Ready"
+      },
+      {
+        "test": "Thyroid Function Test",
+        "doctor": "Dr. Ananya Patel",
+        "date": "Feb 5, 2026",
+        "status": "Ready"
+      }
+    ],
+    "notifications": [
+      {
+        "title": "Appointment Reminder",
+        "message": "Your appointment with Dr. Priya Sharma is tomorrow at 10:00 AM",
+        "type": "reminder"
+      },
+      {
+        "title": "Lab Results Ready",
+        "message": "Your Complete Blood Count results are now available",
+        "type": "lab"
+      },
+      {
+        "title": "Prescription Expiring",
+        "message": "Your Paracetamol prescription expires in 30 days",
+        "type": "prescription"
+      }
+    ],
+    "upcomingAppointments": [
+      {
+        "doctorName": "Dr. Priya Sharma",
+        "specialty": "Cardiologist",
+        "date": "Feb 15, 2026",
+        "time": "10:00 AM",
+        "type": "Video",
+        "doctorImage": "https://img.freepik.com/free-photo/woman-doctor-wearing-lab-coat-with-stethoscope-isolated_1303-29791.jpg?w=100"
+      },
+      {
+        "doctorName": "Dr. Rajesh Kumar",
+        "specialty": "Neurologist",
+        "date": "Feb 18, 2026",
+        "time": "2:30 PM",
+        "type": "In-Person",
+        "doctorImage": "https://img.freepik.com/free-photo/doctor-with-his-arms-crossed-white-background_1368-5790.jpg?w=100"
+      }
+    ]
+  },
+  "healthDataManya": {
+    "vitals": {
+      "bloodPressure": {
+        "value": "110/70",
+        "unit": "mmHg",
+        "status": "Normal"
+      },
+      "heartRate": {
+        "value": "68",
+        "unit": "bpm",
+        "status": "Healthy"
+      },
+      "bloodSugar": {
+        "value": "88",
+        "unit": "mg/dL",
+        "status": "Normal"
+      },
+      "bmi": {
+        "value": "20.1",
+        "unit": "",
+        "status": "Healthy"
+      }
+    },
+    "prescriptions": [
+      {
+        "name": "Vitamin C 1000mg",
+        "dosage": "1 time daily",
+        "validUntil": "May 10"
+      }
+    ],
+    "labResults": [
+      {
+        "test": "Vitamin B12 Check",
+        "doctor": "Dr. Suresh Reddy",
+        "date": "Mar 20, 2026",
+        "status": "Ready"
+      }
+    ],
+    "notifications": [
+      {
+        "title": "Report Available",
+        "message": "Your routine checkup report is now available.",
+        "type": "lab"
+      }
+    ],
+    "upcomingAppointments": []
+  },
+  "appointments": [
+    {
+      "id": 1650000000003,
+      "doctorId": 6,
+      "doctorName": "Dr. Suresh Reddy",
+      "specialty": "General Medicine",
+      "date": "2026-03-20",
+      "time": "10:30 AM",
+      "type": "In-Person",
+      "status": "completed",
+      "reportStatus": "Ready",
+      "patientEmail": "manya.ladkani2023@vitstudent.ac.in",
+      "patientName": "Manya",
+      "doctorImage": "https://img.freepik.com/free-photo/young-handsome-physician-medical-robe-with-stethoscope_1303-17818.jpg?w=360",
+      "bookedAt": "2026-03-15T10:00:00.000Z"
+    },
+    {
+      "id": 1670000000001,
+      "doctorId": 3,
+      "doctorName": "Dr. Meena Iyer",
+      "specialty": "Pediatrics",
+      "date": "2026-02-05",
+      "time": "11:00 AM",
+      "type": "In-Person",
+      "status": "completed",
+      "reportStatus": "Pending",
+      "doctorImage": "https://img.freepik.com/free-photo/medium-shot-smiley-doctor-with-coat_23-2148814212.jpg?w=360",
+      "bookedAt": "2026-02-01T10:00:00.000Z"
+    },
+    {
+      "id": 1660000000002,
+      "doctorId": 1,
+      "doctorName": "Dr. Priya Sharma",
+      "specialty": "Cardiology",
+      "date": "2026-01-10",
+      "time": "09:00 AM",
+      "type": "Video",
+      "status": "completed",
+      "reportStatus": "Ready",
+      "doctorImage": "https://img.freepik.com/free-photo/woman-doctor-wearing-lab-coat-with-stethoscope-isolated_1303-29791.jpg?w=360",
+      "bookedAt": "2026-01-05T09:30:00.000Z"
+    },
+    {
+      "id": 1775796692111,
+      "doctorId": 1,
+      "doctorName": "Dr. Priya Sharma",
+      "doctorImage": "https://img.freepik.com/free-photo/woman-doctor-wearing-lab-coat-with-stethoscope-isolated_1303-29791.jpg?w=360",
+      "specialty": "Cardiology",
+      "patientEmail": "manya.ladkani2023@vitstudent.ac.in",
+      "patientName": "Manya",
+      "date": "2026-04-15",
+      "time": "10:00",
+      "notes": "",
+      "status": "confirmed",
+      "bookedAt": "2026-04-10T04:51:32.111Z"
+    },
+    {
+      "id": 1776161091960,
+      "doctorId": 4,
+      "doctorName": "Dr. Rajesh Kumar",
+      "doctorImage": "https://img.freepik.com/free-photo/doctor-with-his-arms-crossed-white-background_1368-5790.jpg?w=360",
+      "specialty": "Neurology",
+      "patientEmail": "manyaladkani@gmail.com",
+      "patientName": "Manya ",
+      "date": "2026-04-15",
+      "time": "10:00",
+      "notes": "",
+      "status": "confirmed",
+      "bookedAt": "2026-04-14T10:04:51.960Z"
+    },
+    {
+      "id": 1776165992548,
+      "doctorId": 2,
+      "doctorName": "Dr. Arjun Menon",
+      "doctorImage": "https://img.freepik.com/free-photo/smiling-doctor-with-strethoscope-isolated-grey_651396-974.jpg?w=360",
+      "specialty": "Orthopedics",
+      "patientEmail": "patient@example.com",
+      "patientName": "Mani",
+      "date": "2026-04-17",
+      "time": "15:00",
+      "notes": "",
+      "status": "confirmed",
+      "bookedAt": "2026-04-14T11:26:32.548Z"
+    }
+  ]
+}
