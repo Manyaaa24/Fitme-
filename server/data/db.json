@@ -35,6 +35,32 @@
       "name": "Manya ",
       "role": "patient",
       "email": "manyaladkani@gmail.com"
+    },
+    "test5@test.com": {
+      "password": "123",
+      "name": "test",
+      "role": "patient",
+      "email": "test5@test.com"
+    },
+    "yashsingh@gmail.com": {
+      "password": "12345678",
+      "name": "Yash Singh",
+      "role": "patient",
+      "email": "yashsingh@gmail.com"
+    },
+    "deepasingh@gmail.com": {
+      "id": 1776174451830,
+      "password": "12345678",
+      "name": "Deepa Singh",
+      "role": "patient",
+      "email": "deepasingh@gmail.com"
+    },
+    "arjun@example.com": {
+      "id": 1776174769874,
+      "password": "SecurePassword123",
+      "name": "Arjun Sharma",
+      "role": "patient",
+      "email": "arjun@example.com"
     }
   },
   "doctors": [
@@ -408,18 +434,108 @@
       "bookedAt": "2026-04-14T10:04:51.960Z"
     },
     {
-      "id": 1776165992548,
-      "doctorId": 2,
-      "doctorName": "Dr. Arjun Menon",
-      "doctorImage": "https://img.freepik.com/free-photo/smiling-doctor-with-strethoscope-isolated-grey_651396-974.jpg?w=360",
-      "specialty": "Orthopedics",
+      "id": 1776175892644,
+      "doctorId": 1,
+      "patientEmail": "arjun@example.com",
+      "date": "2026-05-15",
+      "time": "10:30 AM",
+      "status": "confirmed",
+      "bookedAt": "2026-04-14T14:11:32.644Z"
+    },
+    {
+      "id": 1776177072383,
+      "doctorId": 1,
+      "patientEmail": "arjun@example.com",
+      "date": "2026-05-15",
+      "time": "10:30 AM",
+      "status": "confirmed",
+      "bookedAt": "2026-04-14T14:31:12.383Z"
+    },
+    {
+      "id": 1776182206542,
+      "doctorId": 1,
+      "patientEmail": "arjun@example.com",
+      "date": "2026-05-15",
+      "time": "10:30 AM",
+      "status": "confirmed",
+      "bookedAt": "2026-04-14T15:56:46.542Z"
+    },
+    {
+      "id": 1776182526017,
+      "doctorId": 1,
+      "doctorName": "Dr. Priya Sharma",
+      "doctorImage": "https://img.freepik.com/free-photo/woman-doctor-wearing-lab-coat-with-stethoscope-isolated_1303-29791.jpg?w=360",
+      "specialty": "Cardiology",
       "patientEmail": "patient@example.com",
       "patientName": "Mani",
       "date": "2026-04-17",
-      "time": "15:00",
+      "time": "16:00",
       "notes": "",
       "status": "confirmed",
-      "bookedAt": "2026-04-14T11:26:32.548Z"
+      "bookedAt": "2026-04-14T16:02:06.017Z"
+    },
+    {
+      "id": 1776182757223,
+      "doctorId": 1,
+      "patientEmail": "arjun@example.com",
+      "date": "2026-05-15",
+      "time": "10:30 AM",
+      "status": "confirmed",
+      "bookedAt": "2026-04-14T16:05:57.223Z"
+    },
+    {
+      "id": 1776183314430,
+      "doctorId": 1,
+      "patientEmail": "arjun@example.com",
+      "date": "2026-05-15",
+      "time": "10:30 AM",
+      "status": "confirmed",
+      "bookedAt": "2026-04-14T16:15:14.430Z"
+    },
+    {
+      "id": 1776183520503,
+      "doctorId": 1,
+      "patientEmail": "arjun@example.com",
+      "date": "2026-05-15",
+      "time": "10:30 AM",
+      "status": "confirmed",
+      "bookedAt": "2026-04-14T16:18:40.503Z"
+    },
+    {
+      "id": 1776183536818,
+      "doctorId": 1,
+      "patientEmail": "arjun@example.com",
+      "date": "2026-05-15",
+      "time": "10:30 AM",
+      "status": "confirmed",
+      "bookedAt": "2026-04-14T16:18:56.818Z"
+    },
+    {
+      "id": 1776183537670,
+      "doctorId": 1,
+      "patientEmail": "arjun@example.com",
+      "date": "2026-05-15",
+      "time": "10:30 AM",
+      "status": "confirmed",
+      "bookedAt": "2026-04-14T16:18:57.670Z"
+    },
+    {
+      "id": 1776184622572,
+      "doctorId": 1,
+      "patientEmail": "arjun@example.com",
+      "date": "2026-05-15",
+      "time": "10:30 AM",
+      "status": "confirmed",
+      "bookedAt": "2026-04-14T16:37:02.572Z"
+    },
+    {
+      "id": 1776184623407,
+      "doctorId": 1,
+      "patientEmail": "arjun@example.com",
+      "date": "2026-05-15",
+      "time": "10:30 AM",
+      "status": "confirmed",
+      "bookedAt": "2026-04-14T16:37:03.407Z"
     }
   ]
 }

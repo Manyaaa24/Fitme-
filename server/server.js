@@ -31,34 +31,50 @@ app.use((req, res, next) => {
 });
 
 app.post('/api/login', (req, res) => {
-  const { email, password } = req.body;
+  const { email, password } = req.body || {};
+  
+  if (!email || !password) {
+    return res.status(400).json({ error: 'Email and password are required.' });
+  }
+
   const db = readDB();
   const user = db.users[email];
 
   if (user && user.password === password) {
     const { password: _, ...userData } = user;
-    res.json(userData);
+    res.json({ ...userData, token: "mock_jwt_token_123456" });
   } else {
     res.status(401).json({ error: 'Invalid credentials' });
   }
 });
 
 app.post('/api/signup', (req, res) => {
-  const { name, email, password } = req.body;
+  const { name, email, password } = req.body || {};
+  
+  if (!name || !email || !password) {
+    return res.status(400).json({ error: 'Name, email, and password are required.' });
+  }
+
   const db = readDB();
 
   if (db.users[email]) {
     return res.status(400).json({ error: 'User already exists' });
   }
 
-  db.users[email] = { password, name, role: 'patient', email };
+  const id = Date.now();
+  db.users[email] = { id, password, name, role: 'patient', email };
   writeDB(db);
 
-  res.status(201).json({ name, email, role: 'patient' });
+  res.status(201).json({ id, name, email, role: 'patient', token: "mock_jwt_token_123456" });
 });
 
 app.put('/api/users/:email/name', (req, res) => {
-  const { preferredName } = req.body;
+  const { preferredName } = req.body || {};
+  
+  if (!preferredName) {
+    return res.status(400).json({ error: 'preferredName is required.' });
+  }
+
   const db = readDB();
   
   if (db.users[req.params.email]) {
@@ -106,7 +122,12 @@ app.get('/api/health-data', (req, res) => {
 });
 
 app.post('/api/appointments', (req, res) => {
-  const appointmentData = req.body;
+  const appointmentData = req.body || {};
+  
+  if (!appointmentData.doctorId || !appointmentData.date) {
+    return res.status(400).json({ error: 'Incomplete appointment data.' });
+  }
+
   const db = readDB();
   
   const newAppointment = {
